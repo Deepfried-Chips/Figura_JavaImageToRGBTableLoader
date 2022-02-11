@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "figura_entrypoint_example",
+  "version": "${version}",
+
+  "name": "Figura Entrypoint Example",
+  "description": "Example mod for custom Lua APIs in Figura",
+  "authors": [
+    "Francy-Chan"
+  ],
+
+  "license": "LGPL-2.1",
+  "icon": "assets/figura_entrypoint_example/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "figura": [
+      "net.blancworks.figura_entrypoint_example.ExampleAPI"
+    ]
+  },
+  "mixins": [
+    "figura_entrypoint_example.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.18-",
+    "java": ">=16",
+    "figura": ">=0.0.8-"
+  }
+}
